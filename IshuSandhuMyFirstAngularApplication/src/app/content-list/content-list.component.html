@@ -1,1 +1,1 @@
-<app-content-list-item *ngFor="let content of contents" [content]="content"></app-content-list-item>
+<app-content-list-item *ngFor="let content of contents; let i= index" [content]="content" [index]="i"></app-content-list-item>

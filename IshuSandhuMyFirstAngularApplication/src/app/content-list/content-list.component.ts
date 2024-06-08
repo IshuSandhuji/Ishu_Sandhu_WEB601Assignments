@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IContent } from '../interface';
 import { ContentListItemComponent } from "../content-list-item/content-list-item.component";
-import { NgModel } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({

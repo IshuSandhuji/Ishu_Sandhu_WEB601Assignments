@@ -11,4 +11,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ContentListItemComponent {
   @Input() content!: IContent;
+  @Input()
+  index!: number;
+  isEven() {
+    return this.index % 2 === 0;
+  }
 }
