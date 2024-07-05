@@ -4,13 +4,14 @@ import { ContentListComponent } from "./content-list/content-list.component";
 import { ContentListItemComponent } from "./content-list-item/content-list-item.component";
 import { FetchCarsService } from './service/fetch-cars.service';
 import { IContent } from './interface';
+import { DetailedComponentComponent } from "./detailed-component/detailed-component.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  imports: [RouterOutlet, ContentListComponent, ContentListItemComponent]
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    imports: [RouterOutlet, ContentListComponent, ContentListItemComponent, DetailedComponentComponent]
 })
 export class AppComponent implements OnInit {
   title = 'IshuSandhuMyFirstAngularApplication';

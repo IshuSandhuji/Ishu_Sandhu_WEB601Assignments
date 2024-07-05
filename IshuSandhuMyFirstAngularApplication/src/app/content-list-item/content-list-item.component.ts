@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './content-list-item.component.scss'
 })
 export class ContentListItemComponent {
-  @Input() content: IContent|undefined;
+  @Input() content: IContent | undefined;
   @Input()
   index!: number;
   isEven() {
