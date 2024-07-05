@@ -1,0 +1,10 @@
+<form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+    <label for="action">Select an action:</label>
+    <select id="action" formControlName="action">
+      <option value="" disableds>Select...</option>
+      <option value="buy">Buy a Car</option>
+      <option value="sell">Sell a Car</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  

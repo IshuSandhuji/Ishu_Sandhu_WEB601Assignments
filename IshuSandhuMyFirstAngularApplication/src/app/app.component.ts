@@ -5,13 +5,15 @@ import { ContentListItemComponent } from "./content-list-item/content-list-item.
 import { FetchCarsService } from './service/fetch-cars.service';
 import { IContent } from './interface';
 import { DetailedComponentComponent } from "./detailed-component/detailed-component.component";
+import { PageNavigatorComponent } from "./page-navigator/page-navigator.component";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [RouterOutlet, ContentListComponent, ContentListItemComponent, DetailedComponentComponent]
+    imports: [RouterOutlet, ContentListComponent, ContentListItemComponent, DetailedComponentComponent, PageNavigatorComponent,ReactiveFormsModule]
 })
 export class AppComponent implements OnInit {
   title = 'IshuSandhuMyFirstAngularApplication';
