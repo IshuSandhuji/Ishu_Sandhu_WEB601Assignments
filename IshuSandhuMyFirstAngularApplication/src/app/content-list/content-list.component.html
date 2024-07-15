@@ -1,2 +1,21 @@
-<app-page-navigator></app-page-navigator>
-<app-content-list-item *ngFor="let item of content; let i= index" [content]="item" [index]="i"></app-content-list-item>
+<div>
+  <h2>Electric Vehicles</h2>
+  <ul>
+    <app-content-list-item *ngFor="let item of content | filterIContent:'Electric'; let i = index" [content]="item" [index]="i" appElectricStyle></app-content-list-item>
+  </ul>
+
+  <h2>Gasoline Vehicles</h2>
+  <ul>
+    <app-content-list-item *ngFor="let item of content | filterIContent:'Gasoline'; let i = index" [content]="item" [index]="i" appGasolineStyle></app-content-list-item>
+  </ul>
+
+  <h2>Hybrid Vehicles</h2>
+  <ul>
+    <app-content-list-item *ngFor="let item of content | filterIContent:'Hybrid'; let i = index" [content]="item" [index]="i" appHybridStyle></app-content-list-item>
+  </ul>
+
+  <h2>Other Vehicles</h2>
+  <ul>
+    <app-content-list-item *ngFor="let item of content | filterIContent; let i = index" [content]="item" [index]="i" appNoTypeStyle></app-content-list-item>
+  </ul>
+</div>

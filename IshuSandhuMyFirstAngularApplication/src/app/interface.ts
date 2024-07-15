@@ -4,7 +4,7 @@ export interface IContent {
     description: string,
     model: string,
     imgSrc: string,
-    type: string,
+    type?: string,
     tags: string[],
     Date?: string,
     milage?: number

@@ -56,7 +56,6 @@ export const CONTENT: IContent[] = [
         description: 'A small electric vehicle with a distinctive design and great urban mobility.',
         model: 'i3',
         imgSrc: 'https://th.bing.com/th/id/OIP.5Y8n-v4wZAAylz_dFGgSOQHaFj?pid=ImgDet&rs=1',
-        type: 'Electric',
         tags: ['Electric', 'Compact', 'Urban'],
         milage:23,
         Date:"04/03/2012"
